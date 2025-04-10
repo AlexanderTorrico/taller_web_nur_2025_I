@@ -1,23 +1,22 @@
 import BuilderCasa.Casa;
 import BuilderCasa.CasaBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
 public class Main {
     public static void main(String[] args) {
+        List<Person> pesonas = new ArrayList<>();
+        Person juan = new Person("Ana");
+        Person soe = new Person("Soe");;
+        soe.setName("Anton");
 
-//public Casa casa = new Casa("Blanco", 1, 3, 2, false, false, false, false);
-        CasaBuilder casaBuilder = new CasaBuilder();
+        pesonas.add(juan);
+        pesonas.add(soe);
 
-        Casa miCasa = casaBuilder.setColor("Rojo")
-                .setNumPisos(2)
-                .setNumHabitaciones(4)
-                .setNumBaños(3)
-                .setTieneGaraje(true)
-                .setTienePiscina(false)
-                .setTieneJardin(true)
-                .setTieneTerraza(true)
-                .build();
+        String name = "Juan";
+        int age = 25;
 
-        System.out.println(miCasa);
+        System.out.println(juan);
 
     }
 }
